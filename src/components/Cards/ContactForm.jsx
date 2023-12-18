@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { IoClose } from "react-icons/io5";
 
-const ContactForm = ({setIsModalOpen}) => {
+const ContactForm = ({ setIsModalOpen }) => {
   const [formData, setFormData] = useState({
     name: "",
     email: "",
@@ -25,14 +25,16 @@ const ContactForm = ({setIsModalOpen}) => {
   return (
     <div className="w-screen h-screen fixed top-0 left-0 bg-gray-700/50 flex items-center justify-center">
       <div className="w-[550px] px-5 sm:w-[90%] relative h-fit py-7 rounded-xl bg-white shadow-pricingBox flex flex-col justify-center items-center">
-        <h1 className="text-4xl  font-extrabold text-gray-800 mb-4 sm:mt-4">Contact Us</h1>
-        <form
-          onSubmit={handleSubmit}
-          className="w-full text-lg  text-left  "
-        >
-            <div className="absolute p-1 text-red-500 bg-gray-200 rounded-md top-3 right-3 cursor-pointer hover:opacity-70" onClick={()=> setIsModalOpen(false)}>
-                <IoClose fontSize={22}/>
-            </div>
+        <h1 className="text-4xl  font-extrabold text-gray-800 mb-4 sm:mt-4">
+          Contact Us
+        </h1>
+        <form onSubmit={handleSubmit} className="w-full text-lg  text-left  ">
+          <div
+            className="absolute p-1 text-red-500 bg-gray-200 rounded-md top-3 right-3 cursor-pointer hover:opacity-70"
+            onClick={() => setIsModalOpen(false)}
+          >
+            <IoClose fontSize={22} />
+          </div>
           <div className="mb-4">
             <label
               htmlFor="name"

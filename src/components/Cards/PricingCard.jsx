@@ -24,12 +24,14 @@ const PricingCard = ({ title, subtitle, price, activeList, isDark, index }) => {
 
   return (
     <motion.div
-    ref={ref}
-      variants={zoomIn(index*0.25, 0.15)}
+      ref={ref}
+      variants={zoomIn(index * 0.25, 0.15)}
       initial="hidden"
       animate={inView ? "visible" : "hidden"}
       className={`flex flex-col max-w-[380px] py-10 pb-20 px-6 border transition-all duration-300  border-gray-200 rounded-2xl ${
-        isDark ? "bg-gray-800 rounded-xl  shadow-pricingBox hover:bg-gray-900" : "hover:bg-gray-100"
+        isDark
+          ? "bg-gray-800 rounded-xl  shadow-pricingBox hover:bg-gray-900"
+          : "hover:bg-gray-100"
       }`}
     >
       <h3

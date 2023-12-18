@@ -12,7 +12,7 @@ const Recents = () => {
     className: "center",
     centerMode: true,
     infinite: true,
-    centerPadding: "10%", // Adjust this value to control the space between cards
+    centerPadding: "10%",
     slidesToShow: 3,
     speed: 500,
     autoplay: true,
@@ -24,7 +24,7 @@ const Recents = () => {
         breakpoint: 1440,
         settings: {
           slidesToShow: 2,
-          centerPadding: "10%", // Adjust this value for the desired card width
+          centerPadding: "10%",
         },
       },
       {
@@ -49,9 +49,9 @@ const Recents = () => {
         <SliderCard imgUrl={r3} />
       </Slider>
       <div className="w-full mt-10 flex justify-center items-center">
-      <button className="text-lg rounded-lg border text-gray-600 border-gray-600 py-4 px-8 font-semibold transition-all duration-300 hover:bg-gray-700 hover:text-gray-100">
-        View recent work
-      </button>
+        <button className="text-lg rounded-lg border text-gray-600 border-gray-600 py-4 px-8 font-semibold transition-all duration-300 hover:bg-gray-700 hover:text-gray-100">
+          View recent work
+        </button>
       </div>
     </div>
   );
