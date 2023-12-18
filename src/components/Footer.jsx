@@ -22,7 +22,7 @@ const Footer = () => {
     <div
       ref={ref}
       id="contact"
-      className="flex flex-col bg-gradient-special w-full justify-center items-center my-8 pt-20 px-20 sm:px-3 text-center"
+      className="flex flex-col bg-gradient-special w-full justify-center items-center mt-8 pb-8 pt-20 px-20 sm:px-3 text-center"
     >
       <motion.h1
         variants={textVariant(0)}
