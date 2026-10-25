@@ -1,8 +1,23 @@
-# React + Vite
+# UniCraft: Demo Landing Page
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A demo SaaS landing page built to practise responsive layout and scroll animation in React.
+It is a sample, not a real product.
 
-Currently, two official plugins are available:
+**Live:** [unicraft-landing-page.vercel.app](https://unicraft-landing-page.vercel.app)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Sections
+
+Navbar · Hero header · Recent work slider · How it works · Pricing (Freebie / Professional /
+Enterprise) · Testimonial quote · FAQ · Contact form · Footer with a go-to-top button
+
+## Tech stack
+
+React · Vite · Tailwind CSS · Framer Motion · react-intersection-observer (reveal on scroll) ·
+react-slick
+
+## Getting started
+
+```bash
+npm install
+npm run dev
+```
